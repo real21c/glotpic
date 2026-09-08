@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GlotPic — 이미지 속 글자를, 세계의 언어로</title>
+<meta name="description" content="GlotPic translates the text inside images into many languages at once, keeping the original design. One image in, every language out.">
+<meta property="og:title" content="GlotPic">
+<meta property="og:description" content="One image in. Every language out.">
+<meta property="og:image" content="assets/demo/web/sample_en.jpg">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="brand" href="./" aria-label="GlotPic">
+    <img src="assets/logo.svg" alt="" width="28" height="28">
+    <span>GlotPic</span>
+  </a>
+  <nav class="top-nav">
+    <a href="#how" data-i18n="nav.how">동작 방식</a>
+    <a href="#auto" data-i18n="nav.auto">자동화</a>
+    <a href="#contact" data-i18n="nav.contact">문의</a>
+    <button class="chip" id="langBtn" type="button" aria-label="Switch language">EN</button>
+    <button class="chip icon" id="themeBtn" type="button" aria-label="Toggle theme">◐</button>
+  </nav>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap">
+    <p class="kicker" data-i18n="hero.kicker">이미지 텍스트 자동 번역</p>
+    <h1 data-i18n="hero.title">이미지 속 글자를,<br>세계의 언어로.</h1>
+    <p class="lede" data-i18n="hero.lede">디자인은 그대로, 글자만 바꿉니다. 썸네일·배너·포스터 한 장을 넣으면 여러 언어 버전이 한 번에 나옵니다.</p>
+    <div class="cta">
+      <a class="btn primary" href="#contact" data-i18n="hero.cta1">연동 문의</a>
+      <a class="btn ghost" href="#demo" data-i18n="hero.cta2">결과 보기 ↓</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DEMO (before / after) ============ -->
+<section class="demo" id="demo">
+  <div class="wrap">
+    <div class="before">
+      <figure>
+        <img src="assets/demo/web/sample_ko.jpg" alt="원본 한국어 포스터" width="800" height="450" loading="eager">
+        <figcaption><span class="tag" data-i18n="demo.before">원본</span> 한국어</figcaption>
+      </figure>
+      <div class="arrow" aria-hidden="true">→</div>
+    </div>
+    <div class="after">
+      <figure><img src="assets/demo/web/sample_en.jpg" alt="English" width="800" height="450" loading="lazy"><figcaption>English</figcaption></figure>
+      <figure><img src="assets/demo/web/sample_ja.jpg" alt="日本語" width="800" height="450" loading="lazy"><figcaption>日本語</figcaption></figure>
+      <figure><img src="assets/demo/web/sample_zh-CN.jpg" alt="中文" width="800" height="450" loading="lazy"><figcaption>中文</figcaption></figure>
+      <figure><img src="assets/demo/web/sample_ar.jpg" alt="العربية" width="800" height="450" loading="lazy"><figcaption>العربية</figcaption></figure>
+      <figure><img src="assets/demo/web/sample_de.jpg" alt="Deutsch" width="800" height="450" loading="lazy"><figcaption>Deutsch</figcaption></figure>
+      <figure><img src="assets/demo/web/sample_fr.jpg" alt="Français" width="800" height="450" loading="lazy"><figcaption>Français</figcaption></figure>
+      <figure><img src="assets/demo/web/sample_es.jpg" alt="Español" width="800" height="450" loading="lazy"><figcaption>Español</figcaption></figure>
+      <figure><img src="assets/demo/web/sample_ru.jpg" alt="Русский" width="800" height="450" loading="lazy"><figcaption>Русский</figcaption></figure>
+      <figure><img src="assets/demo/web/sample_th.jpg" alt="ไทย" width="800" height="450" loading="lazy"><figcaption>ไทย</figcaption></figure>
+    </div>
+    <p class="note" data-i18n="demo.note">위 이미지는 GlotPic 이 실제로 만든 결과입니다. 글자 크기·색·강조·정렬을 원본에 맞춥니다. 오른쪽에서 왼쪽으로 읽는 언어도 지원합니다.</p>
+  </div>
+</section>
+
+<!-- ============ HOW ============ -->
+<section class="how" id="how">
+  <div class="wrap">
+    <h2 data-i18n="how.title">세 단계면 끝납니다</h2>
+    <ol class="steps">
+      <li>
+        <span class="num">1</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V4m0 0l-4 4m4-4l4 4M4 16v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3"/></svg>
+        <h3 data-i18n="how.s1">이미지 업로드</h3>
+        <p data-i18n="how.s1d">JPG·PNG·WebP. 썸네일, 배너, 포스터, 일정표.</p>
+      </li>
+      <li>
+        <span class="num">2</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"/></svg>
+        <h3 data-i18n="how.s2">언어 선택</h3>
+        <p data-i18n="how.s2d">하나든 열 개든. 언어마다 파일 한 장씩 만듭니다.</p>
+      </li>
+      <li>
+        <span class="num">3</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v12m0 0l-4-4m4 4l4-4M4 16v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3"/></svg>
+        <h3 data-i18n="how.s3">다운로드</h3>
+        <p data-i18n="how.s3d">원본과 같은 크기·같은 자리. 바로 올리면 됩니다.</p>
+      </li>
+    </ol>
+    <ul class="facts">
+      <li data-i18n="how.f1">글자만 지우고 다시 씁니다. 사진·로고·배경은 손대지 않습니다.</li>
+      <li data-i18n="how.f2">원본의 글자 크기·색·강조색·정렬을 그대로 따릅니다. 번역문이 길면 그때만 줄입니다.</li>
+      <li data-i18n="how.f3">아랍어 같은 오른쪽→왼쪽 언어, 태국어·중국어·일본어 글꼴을 지원합니다.</li>
+      <li data-i18n="how.f4">확신이 없는 글자는 원문을 남깁니다. 엉뚱한 번역으로 이미지를 망치지 않습니다.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ AUTOMATION ============ -->
+<section class="auto" id="auto">
+  <div class="wrap">
+    <p class="kicker" data-i18n="auto.kicker">연동형 자동화</p>
+    <h2 data-i18n="auto.title">게시물이 올라오면 알아서 번역됩니다</h2>
+    <p class="lede" data-i18n="auto.lede">업로드 도구가 아니라 파이프라인입니다. 고객 시스템에 새 게시물·배너가 저장되는 순간 GlotPic 에 접수되고, 번역된 이미지가 지정한 스토리지에 자동으로 올라갑니다. 사이트는 방문자의 언어에 맞는 파일을 그냥 보여주면 됩니다.</p>
+
+    <svg class="pipeline" viewBox="0 0 900 200" role="img" aria-label="고객 시스템 → GlotPic → 스토리지/CDN → 사이트">
+      <defs>
+        <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5 0 10z" fill="currentColor"/></marker>
+      </defs>
+      <g class="node"><rect x="20" y="60" width="200" height="80" rx="14"/><text x="120" y="94" text-anchor="middle" data-i18n="auto.n1">고객 시스템</text><text x="120" y="118" text-anchor="middle" class="sub" data-i18n="auto.n1s">게시판 · 관리자 배너</text></g>
+      <path class="edge" d="M222 100H318" marker-end="url(#ah)"/><text x="270" y="88" text-anchor="middle" class="lbl" data-i18n="auto.e1">저장 시 접수</text>
+      <g class="node hi"><rect x="320" y="50" width="260" height="100" rx="14"/><text x="450" y="92" text-anchor="middle" class="big">GlotPic</text><text x="450" y="118" text-anchor="middle" class="sub" data-i18n="auto.n2s">인식 · 번역 · 재조판</text></g>
+      <path class="edge" d="M582 100H678" marker-end="url(#ah)"/><text x="630" y="88" text-anchor="middle" class="lbl" data-i18n="auto.e2">언어별 업로드</text>
+      <g class="node"><rect x="680" y="60" width="200" height="80" rx="14"/><text x="780" y="94" text-anchor="middle" data-i18n="auto.n3">스토리지 / CDN</text><text x="780" y="118" text-anchor="middle" class="sub">{id}_{lang}.png</text></g>
+    </svg>
+
+    <ul class="facts">
+      <li data-i18n="auto.f1">사람이 손댈 일이 없습니다. 접수부터 업로드까지 무인으로 돕니다.</li>
+      <li data-i18n="auto.f2">사이트별로 번역 언어를 정합니다. 9개든 3개든 고객마다 다르게.</li>
+      <li data-i18n="auto.f3">파일 이름 규칙이 단순해서 어떤 사이트에도 몇 줄이면 붙습니다.</li>
+      <li data-i18n="auto.f4">현재 한국 교회 홈페이지의 설교 썸네일과 배너에서 실제 운영 중입니다.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <h2 data-i18n="contact.title">연동을 원하시나요?</h2>
+    <p class="lede" data-i18n="contact.lede">운영 중인 사이트와 번역할 언어를 알려 주세요. 연동 방식과 비용을 안내해 드립니다.</p>
+    <a class="btn primary big" href="mailto:hello@now100k.com?subject=GlotPic%20%EC%97%B0%EB%8F%99%20%EB%AC%B8%EC%9D%98">hello@now100k.com</a>
+    <p class="note" data-i18n="contact.note">셀프서비스 업로드 도구는 준비 중입니다.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>GlotPic</span>
+    <span class="dot">·</span>
+    <span data-i18n="foot.by">a <a href="https://now100k.com">now100k studio</a> product</span>
+    <span class="dot">·</span>
+    <a href="https://github.com/real21c/glotpic">GitHub</a>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

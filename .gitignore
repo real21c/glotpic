@@ -1,0 +1,10 @@
+# 산출물·도구 캐시
+.wrangler/
+node_modules/
+*.log
+_*.png
+
+# 원본 크기 데모 이미지는 커밋 (assets/demo/*.png). 웹용은 assets/demo/web/
+# 시크릿 없음 — 이 리포는 정적 사이트뿐
+.env
+.env.*
