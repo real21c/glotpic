@@ -69,4 +69,4 @@ The service itself (worker, queue, engine) lives in a private repository. This r
 
 ## Contact
 
-Integration inquiries: **hello@now100k.com**
+Integration inquiries: **real21c@gmail.com**
