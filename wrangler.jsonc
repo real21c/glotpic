@@ -7,5 +7,10 @@
   "assets": {
     "directory": "./",
     "not_found_handling": "404-page"
-  }
+  },
+  // 커스텀 도메인. now100k.com 존이 같은 계정에 있어 DNS 레코드도 배포 때 자동으로 잡힌다.
+  // glotpic.com 을 등록하면 여기에 한 줄 더 넣으면 된다.
+  "routes": [
+    { "pattern": "glotpic.now100k.com", "custom_domain": true }
+  ]
 }
