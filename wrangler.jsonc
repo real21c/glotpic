@@ -1,0 +1,11 @@
+{
+  // GlotPic 랜딩 사이트 — 정적 파일만 서빙하는 Worker (Cloudflare Workers Static Assets).
+  // 서버 코드(main)는 없다. assets.directory 안의 파일을 그대로 내보낸다.
+  // 배포: npx wrangler deploy   (대시보드에서 Git 연결 시 자동 실행)
+  "name": "glotpic",
+  "compatibility_date": "2026-09-09",
+  "assets": {
+    "directory": "./",
+    "not_found_handling": "404-page"
+  }
+}
