@@ -5,7 +5,7 @@
       'nav.how': 'How it works', 'nav.auto': 'Automation', 'nav.contact': 'Contact',
       'hero.kicker': 'Automatic in-image text translation',
       'hero.title': 'One image in.<br>Every language out.',
-      'hero.lede': 'The design stays, only the words change. Drop in one thumbnail, banner or poster and get every language version at once.',
+      'hero.lede': 'The design stays, only the words change.<br>Drop in one thumbnail, banner or poster and get every language version at once.',
       'hero.cta1': 'Talk to us', 'hero.cta2': 'See results ↓',
       'demo.before': 'Original',
       'demo.note': 'Every image above was produced by GlotPic.<br>Font size, colors, highlights and alignment follow the original, and right-to-left scripts are supported.',
@@ -27,7 +27,7 @@
       'auto.f3': '<b>Easy to hook up</b><span>A simple file-name rule means any site connects in a few lines.</span>',
       'auto.f4': '<b>Already in production</b><span>Running on Korean church websites for sermon thumbnails and banners.</span>',
       'contact.title': 'Want it on your site?',
-      'contact.lede': 'Tell us which site you run and which languages you need. We’ll explain how integration works and what it costs.',
+      'contact.lede': 'Tell us which site you run and which languages you need.<br>We’ll explain how integration works and what it costs.',
       'contact.note': 'A self-service upload tool is coming.',
       'foot.by': 'a <a href="https://now100k.com">now100k studio</a> product'
     }
