@@ -55,9 +55,9 @@ h3{font-size:18px;font-weight:700}
 /* demo */
 .demo{padding:20px 0 70px}
 .demo .wrap{display:grid;gap:28px}
-.before{display:grid;grid-template-columns:1fr auto;align-items:center;gap:18px}
+.before{display:grid;gap:18px}
+.arrow{font-size:30px;line-height:1;color:var(--brand);font-weight:800;text-align:center;margin:-10px 0}
 .before figure{margin:0;max-width:560px;justify-self:center}
-.arrow{font-size:40px;color:var(--brand);font-weight:800;display:none}
 .after{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow)}
 figure img{aspect-ratio:16/9;object-fit:cover}
@@ -65,7 +65,6 @@ figcaption{padding:8px 12px;font-size:13px;color:var(--muted);display:flex;gap:8
 .tag{background:var(--accent);color:#14161d;font-weight:800;font-size:11px;padding:2px 8px;border-radius:999px}
 @media (max-width:760px){.after{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:480px){.after{grid-template-columns:1fr}}
-@media (min-width:900px){.before{grid-template-columns:1fr auto}.arrow{display:block}}
 
 /* how */
 .how{padding:70px 0;background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
