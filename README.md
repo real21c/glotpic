@@ -3,9 +3,9 @@
 **One image in. Every language out.**
 이미지 속 글자를, 세계의 언어로.
 
-GlotPic translates the text *inside* an image into many languages at once, keeping the original design. Drop in a thumbnail, banner or poster and get one file per language, same size, same layout.
+GlotPic translates the text *inside* an image into 14 languages at once, keeping the original design. Drop in a thumbnail, banner or poster and get one file per language, same size, same layout.
 
-GlotPic 은 이미지 안의 글자를 여러 언어로 한 번에 번역합니다. 디자인은 그대로 두고 글자만 바꿉니다. 썸네일·배너·포스터 한 장을 넣으면 언어마다 한 장씩, 같은 크기·같은 자리로 나옵니다.
+GlotPic 은 이미지 안의 글자를 14개 언어로 한 번에 번역합니다. 디자인은 그대로 두고 글자만 바꿉니다. 썸네일·배너·포스터 한 장을 넣으면 언어마다 한 장씩, 같은 크기·같은 자리로 나옵니다.
 
 Website: **https://glotpic.now100k.com** · a [now100k studio](https://now100k.com) product
 
@@ -42,19 +42,21 @@ GlotPic is a pipeline, not just an upload tool.
 - The moment a post or banner is saved, it is queued. Nobody touches it after that.
 - Translated files land in your own storage under a simple name rule, so any site can serve the right language with a few lines of front-end code.
 - Languages are configured per site.
-- In production today on Korean church websites (sermon thumbnails, slide banners, logos).
 
 ## Status
 
-| Stage | Scope | State |
+| Stage | What | State |
 |---|---|---|
-| 0 | Landing page (this repo) + integration by request | live |
-| 1 | Self-service upload tool `/translate` with shareable result links | planned |
-| 2 | Accounts, credits, pricing, public API docs | planned |
+| 1 | **Integrated pipeline** — a post is saved, queued, translated and delivered to your storage, with an admin console | **live** |
+| 2 | **Outside customers** — per-customer API key, storage and language set | **ready · by inquiry** |
+| 3 | **Self-serve** — upload at `/translate`, shareable result links | planned |
+| 4 | **Accounts & billing** — credits, pricing, public API docs | planned |
+
+Stage 1 runs in production today on Korean church websites (sermon thumbnails, slide banners, logos).
 
 ## This repository
 
-Static site for **glotpic.now100k.com**, deployed with Cloudflare Pages. No build step.
+Static site for **glotpic.now100k.com**, served by a Cloudflare Worker (static assets). No build step.
 
 ```
 index.html          landing page (ko / en toggle, light / dark)
@@ -63,7 +65,7 @@ assets/app.js       language + theme switch
 assets/demo/        sample poster and its translations (self-made, free to reuse)
 ```
 
-Run locally: open `index.html`, or `npx wrangler pages dev .`
+Run locally: open `index.html`, or `npx wrangler dev`. Deploy: `npx wrangler deploy`.
 
 The service itself (worker, queue, engine) lives in a private repository. This repo only shows *what* GlotPic does, not *how*.
 
