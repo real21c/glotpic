@@ -11,19 +11,21 @@ Website: **https://glotpic.now100k.com** · a [now100k studio](https://now100k.c
 
 ## What it does
 
-| Original (ko) | English | 日本語 |
-|---|---|---|
-| ![](assets/demo/web/sample_ko.jpg) | ![](assets/demo/web/sample_en.jpg) | ![](assets/demo/web/sample_ja.jpg) |
+**The original — Korean**
 
-| 中文 | العربية | Deutsch |
-|---|---|---|
-| ![](assets/demo/web/sample_zh-CN.jpg) | ![](assets/demo/web/sample_ar.jpg) | ![](assets/demo/web/sample_de.jpg) |
+![Korean original](assets/demo/web/sample_ko.jpg)
 
-| Français | Español | Русский | ไทย |
-|---|---|---|---|
-| ![](assets/demo/web/sample_fr.jpg) | ![](assets/demo/web/sample_es.jpg) | ![](assets/demo/web/sample_ru.jpg) | ![](assets/demo/web/sample_th.jpg) |
+**↓ translated into 9 languages — same size, same layout**
 
-Every image above was produced by GlotPic from the single Korean original.
+| English | 日本語 | 中文 |
+|:--:|:--:|:--:|
+| ![](assets/demo/web/sample_en.jpg) | ![](assets/demo/web/sample_ja.jpg) | ![](assets/demo/web/sample_zh-CN.jpg) |
+| **العربية** | **Deutsch** | **Français** |
+| ![](assets/demo/web/sample_ar.jpg) | ![](assets/demo/web/sample_de.jpg) | ![](assets/demo/web/sample_fr.jpg) |
+| **Español** | **Русский** | **ไทย** |
+| ![](assets/demo/web/sample_es.jpg) | ![](assets/demo/web/sample_ru.jpg) | ![](assets/demo/web/sample_th.jpg) |
+
+Every image under the arrow was produced by GlotPic from that one Korean file.
 
 - Only the text is erased and rewritten. Photos, logos and backgrounds are untouched.
 - Font size, color, highlight color and alignment follow the original. Text shrinks only when the translation is longer, and multi-line titles keep their spacing.
