@@ -45,16 +45,17 @@ GlotPic is a pipeline, not just an upload tool.
 - Translated files land in your own storage under a simple name rule, so any site can serve the right language with a few lines of front-end code.
 - Languages are configured per site.
 
-## Status
+## Availability
 
-| Stage | What | State |
-|---|---|---|
-| 1 | **Integrated pipeline** — a post is saved, queued, translated and delivered to your storage, with an admin console | **live** |
-| 2 | **Outside customers** — per-customer API key, storage and language set | **ready · by inquiry** |
-| 3 | **Self-serve** — upload at `/translate`, shareable result links | planned |
-| 4 | **Accounts & billing** — credits, pricing, public API docs | planned |
+**Available now**
 
-Stage 1 runs in production today on Korean church websites (sermon thumbnails, slide banners, logos).
+- **Integrated pipeline** — a post or banner is saved, queued, translated and delivered to your storage, with an admin console. In production today on Korean church websites (sermon thumbnails, slide banners, logos).
+- **Outside customers** — your own API key, storage and language set. By inquiry.
+
+**Planned**
+
+- **Self-serve** — upload at `/translate`, shareable result links
+- **Accounts & billing** — credits, pricing, public API docs
 
 ## This repository
 
